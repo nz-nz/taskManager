@@ -1,0 +1,89 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+#root
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+#AddDeadlineElem
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  div
+    margin: 20px
+
+
+.input_div
+  width: 300px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-color: #352E8F
+  color: white
+  border-radius: 5px
+  //border: solid 2px #352E8F
+
+.btn
+  @extend .input_div
+  //transition: box-shadow 20ms
+  transition: 500ms
+  border: solid 2px #F28401
+  background-color: white
+  color: black
+  //background-color: #F28401
+  //height: 30px
+  p
+    margin: 5px 20px 20px 20px
+
+.input_div_label
+  margin: 5px 20px 20px 20px
+
+.input_div_input
+  min_height: 35px
+  border: solid 2px #352E8F
+  border-radius: 0 0 5px 5px
+  font-size: 20px
+  text-align: center
+
+.active
+  color: white
+  background-color: #F28401
+  cursor: pointer
+
+.active:hover
+  //background-color: #F28401
+  box-shadow: 0 0 15px rgba(0,0,0,0.5)
+  //color: white
+  //p::after
+  //  content: '  id'
+    //background-color: #352E8F
+
+.postFrame
+  width: 300px
+  margin: 20px
+  padding: 10px
+  position: relative
+  border-radius: 5px
+  p
+    margin: 20px 0 20px 0
+
+.close_btn
+  width: 30px
+  height: 30px
+  background-color: #F28401
+  border-radius: 50%
+  position: absolute
+  top: -15px
+  right: -15px
+
+.close_btn:after
+  content: 'X'
+  //margin-left: 30%
+  //padding-top: 20px
+  position: absolute
+  top: 5px
+  right: 10px

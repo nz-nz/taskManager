@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>30_JSV_HW_Zhukovets_LocalSrorage_deadline</title>
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+
+    <div id="root">
+
+        <div id="AddDeadlineElem">
+
+            <div class="input_div">
+                <label for="deadline_date" class="input_div_label">Дата и время дедлайна</label>
+                <input type="datetime-local" id="deadline_date" class="input_div_input" pattern="\d{1,3}" title="Целые числа от 1 до 100" placeholder="Целые числа от 1 до 100">
+            </div>
+
+            <div class="input_div">
+                <label for="deadline_description" class="input_div_label">Описание дедлайна</label>
+                <textarea id="deadline_description" class="input_div_input" cols="30" rows="5"></textarea>
+            </div>
+
+            <div class="btn">
+                <p>Отправить</p>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
